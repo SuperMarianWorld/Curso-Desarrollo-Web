@@ -2,7 +2,7 @@
 //Método POST
 /*
   Básicamente lo que se está haciendo acá es usar el método POST para recibir
-  la información que fue enviada desde el formulario en el apartado HTML
+  la información que sea enviada desde el formulario en el apartado HTML
 */
 
 if($_POST){
