@@ -1,0 +1,257 @@
+<!DOCTYPE html> 
+
+<p> < !DOCTYPE html> Es la declaración del tipo de documento. 
+Indica al navegador el tipo de documento que se va a usar, en este caso html<br>
+< !- -Esta es la forma de hacer comentarios en un archivo html - -><br>
+<> </> Estos son los simbolos más usados
+<! -- --> </p>
+
+
+
+<p> <html lang="es"> <!-- Elemento raíz de un archivo html. Todos los demás elementos que van a conformar
+			la estructura de la página van dentro de éste elemento. Dentro de ella encontraremos
+			otros dos elementos principales: -->
+
+	<head> <!-- Todos los elementos que van a estar dentro de éste Son elementos detrás de escena.
+					 O sea, son elementos importantes para la página
+					pero no van a formar la estructura principal de la página -->
+		
+		<!-- Se pueden incluir archivos externos necesarios para la página, como archivos css
+		archivos de javascript o también se puede personalizar el título de la página -->
+		
+		<!--Este elemento no se puede omitir. En caso de ser omitido, los navegadores lo generan
+		de manera automática -->
+		<title>CURSO HTML Y CSS DESDE CERO POR FreeCODECamp</title> <!--Este elemento se utiliza
+		para generar un título en la pestaña del navegador y que permanezca oculto la ruta o enlace.
+		Mejora el aspecto visual pero no es personalizable con elementos como strong o small,
+		ni con <em>, etc. -->
+		
+	</head>
+	
+	<body> <!--Es donde se define la estructura de la página. Acá tambien es donde comienza
+					el encabezado o "heading" -->
+	
+	<!-- <main> </main>	 Este elemento es donde se encuentra el contenido principal
+							de la página. Todo contenido principal debe ir si o si dentro 
+							de éste elemento.
+		El elemento <main> representa el contenido principal de <body> de un documento o app.
+		El área principal del contenido consiste en el contenido que está directamente relacionado,
+		o se expande sobre el tema central de un documento o la funcionalidad central de una app.
+		Este contenido debe ser único al documento, excluyendo cualquier contenido que se repita
+		a través de un conjunto de documentos como barras laterales, enlaces de navegación,
+		información de derechos de autor, logos del sitio y formularios de búsqueda (a menos,
+		que la función principal del documento sea un formulario de búsqueda).
+		IMPORTANTE: No debe haber más de un elemento <main> en un documento y éste no debe
+		ser descendiente de un elemento <article>, <aside>, <footer>, <header> o <nav>.
+		Fuente: Mozilla MDN Web docs.
+		
+		Ejemplo: -->				
+		<main> <!-- Inicia la apertura -->
+		
+			<p> Atributos: Los atributos en un elemento le indican al navegador una especificación de algo. 
+				Por ejemplo, dentro de la etiqueta de apertura html se puede incluir el atributo de lenguaje,
+				de ésta manera se le indica al navegador el idioma en el que va a estar la página.
+				Ejemplo < html lan g="es" > </p><br>
+				<br>
+				
+			<h1>Encabezado H1</h1> <!-- Esta etiqueta es la forma del encabezado. El numero 1 es el tamaño más grande
+								del encabezado y representa la importancia del mismo; siempre está en negrita.
+								 El tamaño es persalizable	en CSS. -->
+			<h2>Encabezado H2 </h2>
+			<h3>Encabezado H3</h3>
+			<h4>Encabezado H4</h4>
+			<h5>Encabezado H5</h5>
+			<h6>Encabezado H6</h6> <!-- Este es el nivel máximo de tamaño en el formato de HTML -->
+	
+			<p>Tipo de elemento PARRAFO<br>
+				En ésta parte va todo aquello que sea texto y párrafo, ya sea para brindar una información
+				o simplemente para escribir algo que debe ser visualizado en la página.
+				La etiqueta sería tal como la vemos "< p> < /p>" </p>
+				
+			<img src="/home/pc/Imágenes/representacao-grafica-fenix.webp" alt="Un ave fénix en vuelo"> <!-- Este elemento sirve para añadir una imagen al documento.
+			en su etiqueta de apertura <img src="" se especifica la ruta dónde se encuentra
+			la imagen. Si es un enlace de internet, se coloca el enlace y es válido.
+			Se cierra automáticamente. En ésta etiqueta es ideal ponerle la etiqueta alt="" 
+			tal como se muestra en el ejemplo, ya que en caso de que la imagen no se cargue
+			correctamente, mostrará un texto leyenda que el desarrollador escribe para brindar
+			una descripción textual de la imagen que debe ser cargada. No es obligatorio incluirla. -->
+
+	<!-- La etiqueta <a> sirve para añadir enlaces a la página</a> Para que sea funcional,
+	dentro de la etiqueta de apertura se debe agregar de ésta manera <a href=""> donde entre las comillas
+	va el enlace al que se debe hacer dirigir la página. A ésta etiqueta se le puede añadir un atributo
+	llamado "target" que le indica al navegador dónde debe abrir el enlace. Por ejemplo:
+	<a href="www.google.com.ar" target="_blank"> hace referencia a que se abra la página de Google
+	en una pestaña nueva "_blank". Es posible agregar más de un atributo pero a tener en cuenta
+	que serán ejecutados en el orden que se hayan colocado.
+	El atributo rel="noopener noreferrer" se recomienda agregar por motivos de seguridad. Nos permite
+	prevenir un ataque llamado Tabnabbing en el que la pestaña de origen se reemplaza para que el usuario
+	ingrese sus datos y eso sería una brecha de seguridad.
+	
+		Para enlazar en la página con elementos internos se utiliza el atributo id="". Este atributo
+		se añade dentro de la etiqueta de apertura de destino. El id lleva un nombre que se lo añade
+		uno mismo y en la etiqueta <a href"#"> (Si o si lleva el simbolo #) se coloca ese id para 
+		hacer la referencia y enlazar hacia	el elemento de la página que se desea visualizar.
+		También se puede colocar la ruta hacia un archivo, el cual sería otra página del mismo proyecto.
+		Se puede crear enlaces en las imágenes, la etiqueta <a></a> debe aplicarse antes de la etiqueta <img> -->
+		
+		<!-- Listas no ordenadas: Se utiliza para listar items de manera no ordenada. Su etiqueta es <ul> </ul>
+		Dentro de éste elemento se debe colocar otro llamado <li> </li> que sería el texto de la lista.
+		Se debe colocar uno por cada elemento de la lista. Ejemplo: -->
+		
+			<ul> Tipo de lista no ordenada
+				<li>item list </li>
+				<li> item list </li>
+				<li>  item list </li>			
+			</ul>
+
+		<!-- Listas ordenadas: Se utiliza para listar items de manera ordenada. Su etiqueta es <ol> </ol>
+		Dentro de éste elemento se debe colocar otro llamado <li> </li> que sería el texto de la lista.
+		Se debe colocar uno por cada elemento de la lista. Ejemplo: -->
+		
+			<ol> Tipo de lista ordenada
+				<li>item list </li>
+				<li> item list </li>
+				<li>  item list </li>			
+			</ol>
+			
+			<!-- Enmarcaciones de texto -->
+			<!-- NEGRITA -->
+			<strong>HTML EN NEGRITA</strong><br> <!-- Esta etiqueta hace que el texto que contiene dentro de ella
+			se marque en Negrita. Determina la importancia o énfasis que necesita darle al texto
+			en pantalla.-->
+			
+			<!-- CURSIVA -->
+			
+			<em>HTML EN CURSIVA</em><br> <!-- Con ésta etiqueta se enmarca en cursiva aquél texto
+			que se quiera darle éste tipo de formato. -->
+			
+			<!-- TEXTO TACHADO -->
+			<s>TACHADO DE TEXTO</s><br> <!-- Sirve para tachar texto sin necesidad de borrarlo.-->
+			
+			<!-- SEPARADORES DE SECCIONES -->
+			<hr> <!-- Es una etiqueta sencilla sin etiqueta de cierre que añade una línea horizontal
+			a la página en la ubicación donde se escriba. Es útil para separar o dividir secciones
+			de página y es personalizable con CSS. -->
+			
+			<!-- FORMULARIOS -->
+			<form action="/dirección local de archivo o enlace"> <!-- Esta es la manera de 
+			crear un formulario y con la etiqueta <input> se logra añadir una caja o "box" 
+			donde se le puede dar al usuario la posibilidad de que escriba.
+			El tipo de dato que se le puede definir para escribir puede variar con type="" 
+			Al crear formularios donde se ingresan datos que deben ser almacenados o guardados,
+			se especifica la ruta con action="/" donde entre las comillas puede ir la ruta y 
+			nombre del archivo local que almacenará esos datos o el enlace al servidor que
+			guardará esos datos.-->
+				<input type="text" placeholder="Ingrese su texto" required=""> <!-- El atributo placeholder=""
+				sirve para colocar un texto dentro de la caja, por ejemplo, si la caja es para 
+				solicitar nombre o dni, entonces el marcador de posición debe decir:
+				placeholder="Ingrese su Nombre" placeholder="DNI mínimo 8 caracteres"
+				El atributo required hace que el campo de texto sea obligatorio. Ideal para que
+				se exija ser llenado antes de ser enviado.-->
+				<input type="radio">Opcion 1 <!-- Este tipo de input genera los conocidos botones 
+				de radio para seleccionar opciones. El atributo "radio" solo generará el circulo 
+				de opción, todavía requerirá la etiqueta <label></label> para que sea aplicable
+				al texto. Ejemplo: <label><Input type="radio" Opción 1</label> 
+				Esto hará que la opción radial se pueda seleccionar presionando el texto, es muy
+				útil para establecer opciones de accesibilidad o para dispositivos táctiles. 
+				Se puede mejorar la aplicación de la etiqueta label agregando un "for" y una id
+				de esa manera se logra establecer una mejor relación además de permitir trabajar
+				con esa id.
+			Ejemplo: <label for="Opcion 1"><input id="Opcion 1" type="radio">Opcion 1</label> -->
+			
+			<!-- GRUPO DE BOTONES DE RADIO
+				Con ésto se logra que sólo una de los botones de radio sea seleccionado y no todas
+				juntas. Simplemente a la etiqueta <input> se le añade el atributo name="".
+		Ejemplo: -->
+		<label for="Opcion 1"><input id="Opcion 1" type="radio" name="Opcion 1-Opcion 2">Opcion 1</label>
+		<label for="Opcion 2"><input id="Opcion 2" type="radio" name="Opcion 1-Opcion 2">Opcion 2</label>
+				<!-- SALTOS DE LINEA
+				En los ejercicios anteriores vimos cómo generar un grupo de opciones radiales,
+				campos de texto y sus atributos. Pero al visualizar su resultado, todo queda en una
+				misma línea. Para que cada contenido tenga su propia línea se le agrega al final
+				de la etiqueta, otra de nombre <br>. No requiere etiqueta de cierre, de ésta manera
+				cada elemento del contenido de la página tendrá su propia línea y evitará que se vea
+				todo amontonado y desordenado.
+			Ejemplo: -->
+		<label for="Opcion 1"><input id="Opcion 1" type="radio" name="Opcion 1-Opcion 2">Opcion 1</label><br>
+		<label for="Opcion 2"><input id="Opcion 2" type="radio" name="Opcion 1-Opcion 2">Opcion 2</label><br>
+			<!-- CASILLAS DE VERIFICACION O CHECKBOX
+				Es otro tipo de botones, son similares (por no decir iguales) a las de radio y se implementan
+				de la misma manera sustituyendo el atributo "radio" por "checkbox".
+				Es útil para crear un grupo de varias opciones, generalmente en los formularios
+				se utiliza los tipos de "radio" para que se seleccione una sola opción y los de 
+				tipo "checkbox" para seleccionar varias opciones a la vez. Tambien se puede hacer
+				que al cargarse la página aparezca seleccionado por defecto una de las opciones,
+				se le agrega a la etiqueta <input> el atributo "checked".
+				Ejemplo <input id="" type="checkbox" name="" CHECKED>Opcion
+				Los elementos <label>, <br> y etc, tambien se pueden implementar.
+			Ejemplo: -->
+		<label for="Opciones 1"><input id="Opciones 1" type="checkbox" name="Opciones 1-Opciones2-Todas">Opciones 1</label><br>
+		<label for="Opciones 2"><input id="Opciones 2" type="checkbox" name="Opciones 1-Opciones2-Todas">Opciones 2</label><br>
+		<label for="Todas"><input id="Todas" type="checkbox" name="Opciones 1-Opciones2-Todas">Todas</label><br>
+
+				<!-- ATRIBUTO VALUE 
+					Se utiliza para indicarle al servidor, el valor de la opcion que el usuario marcó.
+					Sin éste atributo, por defecto, el servidor solo reconoce que una opcion fue seleccinada
+					pero no se indica cuál. Para ello, en el elemento <input> se agrega el atributo
+					value="" que lleva el nombre de la opcion. Éste atributo se puede implementar
+					tanto en los tipos radio como los checkbox.-->
+				
+				
+				<button type="submit">Enviar</button>
+			</form>
+			
+			<!-- ELEMENTO <div> 
+				Este elemento se utiliza como un contenedor para cada parte del contenido
+				de la página. La etiqueta es <div></div> Dentro de la etiqueta se puede lograr
+				que todo lo que en ella contenga esté separado de otro contenido de la página,
+				de esa manera se puede lograr personalizar y editar su contenido con CSS 
+				sin afectar el resto del contenido de la página.
+			Ejemplo: -->
+				<div>
+					<h1>Ejemplo de uso del elemento contenedor <strong><em>DIV</em></strong></h1>
+					<ul>
+						<p>Listas no ordenadas</p>
+						<li>item list </li>
+						<li> item list </li>
+						<li>  item list </li>	
+					</ul>
+					
+					<p>¿Se comprende hasta ahora el curso de HTML?</p><br>
+					
+					<label for="Si">
+						<input id="Si" type="radio" name="Si-No">Sí
+					</label><br>
+					
+					<label for="No">
+						<input id="No" type="radio" name="Si-No">No
+					</label><br>
+					<br>
+								
+				</div> <!-- Si el elemento <div> no se usara, sería imposible crear un grupo aparte
+				de opciones de radio, ya que el navegador agrupará todas aquellas que lleven el 
+				mismo nombre como iguales. -->
+				
+				<small>TEXTO MAS PEQUEÑO</small> <!-- Una etiqueta sencilla que sirve para indicar
+				al navegador que el texto que contiene dentro de esa etiqueta debe ser más pequeño
+				que el resto del contenido. Es ideal sobretodo para el pie de página. -->
+		</main> <!-- Acá cierra. Así es como cerraría el contenido principal de la página -->
+		
+		<footer> <!-- Elemento de pie de página. Éste elemento va después del elemento <main>
+		ya que no forma parte del contenido principal de la página. Generalmente puede ser usado
+		para colocar los enlaces de contacto o redes sociales o cualquier otro contenido como 
+		pie de página, ya que va al final del documento. -->
+		<h4>DOCUMENTACION DE CURSO CREADO POR: <em>MARIANO MALDONADO</em></h4><br>
+		
+		<p><small>Duración total del curso HTML <strong><em>2h:09min</em></strong></small></p>
+		<p><strong>El videocurso sigue con CSS y se usará otra documentación para implementarlo</strong></p>
+		
+		</footer>
+	</body>
+	
+	
+		
+
+</html>
+
+
