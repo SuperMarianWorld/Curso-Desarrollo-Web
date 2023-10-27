@@ -1,8 +1,18 @@
 <?php
+
+/* Investigar: Como habilitar un puerto para Xampp para que pueda ejecutar los documentos php.
+    Ruta: http://localhost:8080/opt/lampp/htdocs/Ejercicios/Ejercicio_2.php
+    Habiendo investigado un poco se logró configurar el puerto 8080 para la ejecución del Dashboard de Xampp.
+    Ahora el reto es lograr que se ejecute y que no aparezca el mensaje "Objeto no localizado"
+
+    Corrección de la ruta: http://localhost:8080/htdocs/Ejercicio_2.php
+    Luego de intentar, la prueba fue exitosa y el archivo se ejecuto!!!
+*/
+
 //Método POST
 /*
   Básicamente lo que se está haciendo acá es usar el método POST para recibir
-  la información que sea enviada desde el formulario en el apartado HTML
+  la información que fue enviada desde el formulario en el apartado HTML
 */
 
 if($_POST){
